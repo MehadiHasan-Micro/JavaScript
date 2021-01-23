@@ -1,4 +1,4 @@
-
+//https://github.com/MehadiHasan-Micro/JavaScript/blob/main/assignment.js
 
 // project 1: kilometerToMeter
 
@@ -9,9 +9,6 @@ function kilometerToMeter(km){
     }
 
 }
-var convtr = kilometerToMeter(-20);
-console.log(convtr);
-
 
 // project 2: budgetCalculator
 
