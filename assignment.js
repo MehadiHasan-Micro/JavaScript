@@ -3,9 +3,14 @@
 // project 1: kilometerToMeter
 
 function kilometerToMeter(km){
-    var meter = km * 1000;
-    return meter;
+    if(km > 0){
+        var meter = km * 1000;
+        return meter;
+    }
+
 }
+var convtr = kilometerToMeter(-20);
+console.log(convtr);
 
 
 // project 2: budgetCalculator
@@ -21,18 +26,18 @@ function budgetCalculator(watch, phone, laptop) {
 // project 3: hotelCost
 
 function hotelCost(days) {
-    if(days <= 10){
+    if(days <= 10 && days > 0){
         cost = days * 100;
         return cost;
     }
-    else if(days <= 20){
+    if(days <= 20 && days > 0){
         var cost1 = 100 * 10;
         var remaning = days - 10;
         var cost2 = remaning * 80;
         cost = cost1 + cost2;
         return cost;
     }
-    else{
+    if(days >= 21){
         var cost1 = 100 * 10;
         var cost2 = 80 * 10;
         var remaning = days - 20;
